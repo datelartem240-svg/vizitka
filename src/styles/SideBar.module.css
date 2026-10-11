@@ -1,0 +1,39 @@
+.contentContainer *{
+    border: 1px solid black;
+}
+
+.contentContainer{
+    position: absolute;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 0.5rem;
+
+    border: 1px solid black;
+
+    bottom: 2.5vh;
+    left: 2.5vw;
+    min-width: 12vh;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contentContainer .links{
+    overflow: hidden;
+    width: 7.5vh;
+    height: 7.5vh;
+    background: none;
+    border-radius: 12.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.contentContainer .links img{
+    width: 5vh;
+    height: 5vh;
+    border: none;
+}

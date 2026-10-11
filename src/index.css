@@ -1,0 +1,152 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  pointer-events: auto;
+}
+
+:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+  min-height: 100dvh;
+  height: 100%;
+  touch-action: pan-y;
+}
+
+::selection {
+  background: var(--color-accent-20);
+  color: var(--color-text);
+}
+
+button{
+  padding: 0.25rem 0.45rem 0.25rem 0.45rem;
+  border-radius: 7.5px;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  width: fit-content;
+}
+
+button:hover{
+  background: var(--color-accent-10);
+}
+
+*,
+*::before,
+*::after {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  background: transparent;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+button:active,
+a:active,
+input:active,
+textarea:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --color-bg: #f4f1ec;
+  --color-bg-secondary: #e8e2d8;
+  --color-bg-tertiary: #dbd3c5;
+
+  --color-text: #1b1a18;
+  --color-text-secondary: #3a342d;
+
+  --color-accent: #6e0f1c;
+  --color-accent-light: #9a2a3a;
+  --color-accent-dark: #4a070f;
+
+  --color-neon: #8a1020;
+  --color-neon-glow: #b83246;
+
+  --color-accent-90: rgba(110, 15, 28, 0.9);
+  --color-accent-70: rgba(110, 15, 28, 0.7);
+  --color-accent-50: rgba(110, 15, 28, 0.5);
+  --color-accent-20: rgba(110, 15, 28, 0.3);
+  --color-accent-10: rgba(110, 15, 28, 0.1);
+
+  --color-neon-90: rgba(138, 16, 32, 0.9);
+  --color-neon-70: rgba(138, 16, 32, 0.7);
+  --color-neon-50: rgba(138, 16, 32, 0.5);
+  --color-neon-20: rgba(138, 16, 32, 0.3);
+
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-20: rgba(255, 255, 255, 0.2);
+
+  --black-90: rgba(0, 0, 0, 0.9);
+  --black-70: rgba(0, 0, 0, 0.7);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --black-20: rgba(0, 0, 0, 0.2);
+  --black-10: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --color-bg: #0b0d10;
+  --color-bg-secondary: #14171c;
+  --color-bg-tertiary: #1d222b;
+
+  --color-text: #f2ede7;
+  --color-text-secondary: #b7b0a6;
+
+  --color-accent: #8a1020;
+  --color-accent-light: #b83246;
+  --color-accent-dark: #5a0a14;
+
+  --color-neon: #a4161a;
+  --color-neon-glow: #d64550;
+
+  --color-accent-90: rgba(138, 16, 32, 0.9);
+  --color-accent-70: rgba(138, 16, 32, 0.7);
+  --color-accent-50: rgba(138, 16, 32, 0.5);
+  --color-accent-30: rgba(138, 16, 32, 0.3);
+  --color-accent-10: rgba(138, 16, 32, 0.1);
+
+  --color-neon-90: rgba(164, 22, 26, 0.9);
+  --color-neon-70: rgba(164, 22, 26, 0.7);
+  --color-neon-50: rgba(164, 22, 26, 0.5);
+  --color-neon-20: rgba(164, 22, 26, 0.3);
+}
